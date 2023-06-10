@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SubActitvity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/blue"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_service1"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="General Home Service"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_baseline_search_24" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/gray1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/textview_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Electrician"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:paddingStart="32dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_done_all_24"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Skilled and verified electricians"
+                    android:layout_gravity="center"
+                    android:paddingStart="12dp"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_access_time_24"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30-Day Service guarentee"
+                    android:layout_gravity="center"
+                    android:paddingStart="12dp"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_build_24"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Damage Cover on every booking"
+                    android:layout_gravity="center"
+                    android:paddingStart="12dp"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_2"
+        android:src="@drawable/electrician"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a service"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        android:paddingStart="16dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerviewfan"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What users are saying about us"
+        android:layout_margin="20dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:text="Ganesh"
+            android:textColor="@color/black"
+            android:paddingStart="32dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_star_rate_24"
+            android:layout_marginStart="40dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_star_rate_24"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_star_rate_24"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_star_rate_24"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_star_rate_24"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The electrician did a through job of fixing fan and light for my house. He is so kind and courteous person"
+        android:layout_margin="20dp"
+        android:paddingStart="12dp"
+        android:layout_gravity="center"
+        android:gravity=""/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:text="Mithun"
+            android:textColor="@color/black"
+            android:paddingStart="32dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_star_rate_24"
+            android:layout_marginStart="40dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_star_rate_24"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_star_rate_24"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_star_rate_24"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The electrician did a through job of fixing fan and light for my house. He is so kind and courteous person"
+        android:layout_margin="20dp"
+        android:paddingStart="12dp"
+        android:layout_gravity="center"
+        android:gravity=""/>
+
+
+
+
+</LinearLayout>
+

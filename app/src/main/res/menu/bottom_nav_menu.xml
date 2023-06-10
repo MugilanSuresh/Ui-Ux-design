@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/homebut"/>
+    <item android:title="My Booking"
+        android:icon="@drawable/ic_baseline_bookmarks_24"
+        android:id="@+id/bookbut"/>
+    <item android:title="Shop"
+        android:id="@+id/shopbut"
+        android:icon="@drawable/ic_baseline_shopping_cart_checkout_24"/>
+    <item android:title="Profile"
+        android:id="@+id/profilebut"
+        android:icon="@drawable/ic_baseline_person_pin_24"/>
+</menu>

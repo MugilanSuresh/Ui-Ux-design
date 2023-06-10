@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ChooseAddress">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:background="@color/blue">
+        <ImageView
+            android:id="@+id/back_service1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Choose Address"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_marginTop="8dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Select Address"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Mugilan "
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="180,South Street, Kulamangalam"
+        android:textSize="18dp"
+        android:layout_marginStart="20dp"
+        android:paddingStart="28dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Orathanadu, Thanjavur.614019"
+        android:textSize="18dp"
+        android:layout_marginStart="20dp"
+        android:paddingStart="28dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/strokeline"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_circle_outline_24"
+            android:layout_gravity="center"
+            android:paddingStart="60dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ADD NEW ADDRESS"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:textSize="20dp"
+            android:textColor="@color/green"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/linearbook1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="visible"
+            android:layout_gravity="bottom"
+            android:background="@color/blue"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confrim Address"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingStart="100dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_forward_24"
+                android:layout_gravity="center"
+                android:paddingStart="60dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

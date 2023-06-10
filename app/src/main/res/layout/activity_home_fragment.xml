@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.HomeFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="96dp"
+      android:background="@color/blue"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_baseline_location_on_24" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="Velacherry, Chennai"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+          >
+          <ImageView
+              android:layout_width="24dp"
+              android:layout_height="match_parent"
+              android:layout_marginStart="40dp"
+              android:src="@drawable/ic_baseline_notifications_none_24" />
+
+        </LinearLayout>
+
+
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/stroke2"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal">
+
+      <ImageView
+          android:layout_width="34dp"
+          android:layout_height="40dp"
+          android:layout_marginStart="20dp"
+          android:src="@drawable/ic_baseline_search_24" />
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:background="@color/transparent"
+          android:paddingStart="12dp"
+          android:hint="Search for a Service"
+          android:textColor="@color/black" />
+    </LinearLayout>
+  </LinearLayout>
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="9"
+      android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:layout_marginStart="12dp"
+          android:layout_marginEnd="12dp"
+          android:background="@drawable/stroke2">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+      </LinearLayout>
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/recyclerview1"/>
+      <androidx.appcompat.widget.AppCompatButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="20dp"
+          android:text="Service"
+          android:id="@+id/servicebut"/>
+
+    </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

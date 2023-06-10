@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ChooseDateTime">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:background="@color/blue">
+        <ImageView
+            android:id="@+id/back_servicedate"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Choose Date &amp; Time"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_marginTop="8dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Select a Date"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"/>
+    <CalendarView
+        android:id="@+id/calender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+</LinearLayout>
